@@ -116,9 +116,9 @@ namespace SonoranHttpHandler
                 dynamic resHeaders = new ExpandoObject();
                 foreach(var header in respHeaders)
                 {
-                    if (!respHeaders.ContainsKey(header.Key))
+                    if (!resHeaders.ContainsKey(header.Key))
                     {
-                        respHeaders.Add(header.Key, header.Value);
+                        resHeaders.Add(header.Key, header.Value);
                     }
                     
                 }
